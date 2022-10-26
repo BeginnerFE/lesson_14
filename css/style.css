@@ -1,0 +1,198 @@
+
+.wrapper {
+	min-height: 100%;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main{
+	flex-grow: 1;
+}
+body {
+	background-color: rgba(152, 53, 53, 0.687);
+}
+.page__title h2 {
+	font-size: 24px;
+	text-decoration: underline;
+	margin-bottom: 30px;
+	letter-spacing: 4px;
+}
+.page {
+	max-width: 1240px;
+	margin: 0 auto;
+	padding: 20px;
+	width: 100%;
+}
+.block {
+	border: 3px solid rgb(114, 63, 131);;
+	background-color: rgb(114, 63, 131);
+	display: flex;
+	margin-bottom: 20px;
+}
+.block__item {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 900;
+	background-color: rgb(132, 132, 132);
+	padding: 10px;
+	text-align: center;
+	border: 3px solid rgba(184, 200, 142, 0.426);
+}
+.block-inline {
+	border: 3px solid rgb(114, 63, 131);;
+	background-color: rgb(114, 63, 131);
+	display: inline-flex;
+	margin-bottom: 20px;
+}
+.block-inline__item {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 900;
+	background-color: rgb(132, 132, 132);
+	padding: 10px;
+	text-align: center;
+	border: 3px solid rgba(184, 200, 142, 0.426);
+}
+.block-wrap {
+	border: 3px solid rgb(114, 63, 131);;
+	background-color: rgb(114, 63, 131);
+	display: flex;
+	flex-wrap: wrap;
+	width: 400px;
+	margin-bottom: 20px;
+}
+.block-wrap__item {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 900;
+	background-color: rgb(132, 132, 132);
+	padding: 10px;
+	text-align: center;
+	border: 3px solid rgba(184, 200, 142, 0.426);
+	width: 100px;
+}
+.block-justify {
+	border: 3px solid rgb(114, 63, 131);;
+	background-color: rgb(114, 63, 131);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 20px;
+}
+.block-justify:hover {
+	border: 3px solid rgb(114, 63, 131);;
+	background-color: rgb(114, 63, 131);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.block-justify__item {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 900;
+	background-color: rgb(132, 132, 132);
+	padding: 10px;
+	text-align: center;
+	border: 3px solid rgba(184, 200, 142, 0.426);
+}
+.block-align {
+	border: 3px solid rgb(114, 63, 131);;
+	background-color: rgb(114, 63, 131);
+	display: flex;
+	flex-wrap: wrap;
+	height: 150px;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	margin-bottom: 20px;
+}
+.block-align:hover {
+	border: 3px solid rgb(114, 63, 131);;
+	background-color: rgb(114, 63, 131);
+	display: flex;
+	flex-wrap: wrap;
+	height: 150px;
+	justify-content: center;
+	align-items: center;
+}
+.block-align__item {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 900;
+	background-color: rgb(132, 132, 132);
+	padding: 10px;
+	text-align: center;
+	border: 3px solid rgba(184, 200, 142, 0.426);
+}
+.block-direction {
+	border: 3px solid rgb(114, 63, 131);;
+	background-color: rgb(114, 63, 131);
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+.block-direction:hover {
+	border: 3px solid rgb(114, 63, 131);;
+	background-color: rgb(114, 63, 131);
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+}
+.block-direction__item {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 900;
+	background-color: rgb(132, 132, 132);
+	padding: 10px;
+	text-align: center;
+	border: 3px solid rgba(184, 200, 142, 0.426);
+}
+.block-self {
+	border: 3px solid rgb(114, 63, 131);;
+	background-color: rgb(114, 63, 131);
+	display: flex;
+	flex-wrap: wrap;
+	height: 150px;
+	margin-bottom: 20px;
+}
+.block-self__item {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 900;
+	background-color: rgb(132, 132, 132);
+	padding: 10px;
+	text-align: center;
+	border: 3px solid rgba(184, 200, 142, 0.426);
+}
+.block-self__item:nth-child(odd){
+	align-self: flex-end;
+}
+.block-self:hover .block-self__item:nth-child(even){
+	align-self: flex-start;
+}
+.block-self:hover .block-self__item:nth-child(4){
+	align-self: flex-start;
+	flex-grow: 1;
+}
+.block-order {
+	border: 3px solid rgb(114, 63, 131);;
+	background-color: rgb(114, 63, 131);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+.block-order:hover .block-order__item:nth-child(2){
+	order: 4;
+}
+.block-order:hover .block-order__item:nth-child(1){
+	order: 2;
+}
+.block-order__item {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 900;
+	background-color: rgb(132, 132, 132);
+	padding: 10px;
+	border: 3px solid rgba(184, 200, 142, 0.426);
+}
